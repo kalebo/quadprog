@@ -8,5 +8,5 @@ set_target_properties(QuadProg++ PROPERTIES PUBLIC_HEADER "src/Array.hh;src/Quad
 target_include_directories( QuadProg++ PUBLIC $<INSTALL_INTERFACE:include> )
 INSTALL(TARGETS QuadProg++ EXPORT quadprog LIBRARY DESTINATION lib PUBLIC_HEADER DESTINATION include )
 export( TARGETS QuadProg++ FILE quadprog.cmake )
-INSTALL(EXPORT quadprog DESTINATION lib )
-INSTALL(FILES quadprog-config.cmake DESTINATION lib )
+INSTALL(EXPORT quadprog DESTINATION lib/cmake/quadprog )
+INSTALL(FILES quadprog-config.cmake DESTINATION lib/cmake/quadprog )
